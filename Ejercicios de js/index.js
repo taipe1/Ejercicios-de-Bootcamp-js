@@ -1,7 +1,7 @@
 // 1. Loop de pares
 // Debés crear una función llamada loopDePares que reciba como parámetro un número y haga un loop de 0 a 100 mostrando en la consola cada número del loop. 
 // En caso de que el número de la iteración, sumado con el número pasado por parámetro, sea par, mostrá en la consola “El número x es par”.
-
+/*
 function loopDePares(numero){
  for(let i = 0;i <=100 ; i++){
    if( (i+numero) % 2 == 0 ){
@@ -14,7 +14,7 @@ function loopDePares(numero){
 }
 
 loopDePares(5);
-
+*/
 // 2. Loop de impares con palabra
 // Debés crear una función llamada loopDeImpares que reciba como parámetro un número y una palabra y haga un loop de 0 a 100 mostrando en la consola cada número del loop. 
 // Ahora, modificá el código para que, en caso de que ese número sumado con el número pasado por parámetro sea impar, muestre en la consola la palabra pasada por parámetro.
@@ -42,20 +42,11 @@ loopDePares(5);
 // Ejemplo:
 // callback(5, (num)=>{return num*10}) debe retornar 50
 // callback(25, (num)=>{return num/5}) debe retornar 5
-// callback = (5) =>{
-
+// function callback(numero, funcion){
+//   console.log(funcion(numero))
 // }
-
-
-
-
-
-
-
-
-
-
-
+// callback(5, (num)=>{return num*10});//debe retornar 50
+// callback(25, (num)=>{return num/5});// debe retornar 5
 
 // 5. Nuevo Arreglo
 // Debés crear una función llamada `nuevoArreglo` que reciba un número como parámetro y que devuelva un nuevo arreglo con tantos elementos como el número que le hayas pasado.
@@ -147,8 +138,39 @@ loopDePares(5);
 // mezclarArreglos([1,2,3,4], [“h”,”p”]) debe retornar [1, “h”, 2, “p”, 3 , 4]
 // mezclarArreglos([“h”,”p”], [1,2,3,4]) debe retornar [“h”, 1, “p”, 2, 3 , 4]
 // function mezclarArreglos(arra1,arra2){
+//   let tama1=arra1.length;
+//   let tama2=arra2.length;
+//   if(arra1.length > arra2.length){
+//     let dif = tama1-tama2;
+//     let newarr=[]
+//     let newarreglo=[]
+//     newarr = arra1.slice(0,dif)
+//     for(let i=0;i<tama2;i++){
+//       newarreglo.push(newarr[i],arra2[i])
+//     }
+//     newarreglo.push(arra1.slice(tama1-dif,tama1))
+//     console.log(newarreglo)
+//   }else if(arra1.length < arra2.length){
+//     let dif = tama2-tama1;
+//     let newarr=[]
+//     let newarreglo=[]
+//     newarr = arra2.slice(0,dif)
+//     for(let i=0;i<tama1;i++){
+//       newarreglo.push(arra1[i],newarr[i])
+//     }
+//     newarreglo.push(arra2.slice(tama2-dif,tama2))
+//     console.log(newarreglo)
+//   }else{
+//     let newarreglo=[]
+//     for(let i=0;i<tama1;i++){
+//       newarreglo.push(arra1[i],arra2[i])
+//     }
+//     console.log(newarreglo)
+//   }
 // }
-// mezclarArreglos([1,2,3,4], ["h","p"])
+// mezclarArreglos([1,2,3,4],["h","o","l","a"]) //debe retornar [1, “h”, 2,”o”, 3,”l”,4,”a”]
+// mezclarArreglos([1,2,3,4], ["h","p"]) //debe retornar [1, “h”, 2, “p”, 3 , 4]
+// mezclarArreglos(["h","p"], [1,2,3,4]) //debe retornar [“h”, 1, “p”, 2, 3 , 4]
 
 // 11. Arreglos
 // Investiga los siguientes métodos de los arreglos y replica su funcionamiento de manera lógica al igual que lo hiciste en el ejercicio número 5: 
@@ -190,11 +212,23 @@ loopDePares(5);
 // Ejemplo: 
 // minSum([7, 6, 5, 4, 3, 2, 1]) debe retornar 3 (2 + 1)
 // minSum([1, 10, 43, 900, 20, 8]) debe retornar 9
-// function minSum(array){
-//   console.log(Math.min(array));
-// }
+function minSum(array){
+  console.log(Math.min(array));
+}
 
-// minSum([7, 6, 5, 4, 3, 2, 1]);
+minSum([7, 6, 5, 4, 3, 2, 1]);
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 13. Arreglo de objetos
 // Debés crear una función llamada `arregloDeObjetos` que reciba un número como parámetro y devuelva un arreglo de objetos que tengan una propiedad llamada `valor` que contenga el valor del número y sus anteriores.
@@ -244,6 +278,11 @@ loopDePares(5);
 // }
 // var  arreglo = [{name:"lucas", edad:20},{name:"santi",edad:22}];
 // oneProperty(arreglo,'edad');
+
+
+
+
+
 
 
 
